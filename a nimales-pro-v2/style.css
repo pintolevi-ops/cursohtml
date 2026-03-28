@@ -1,0 +1,168 @@
+:root {
+   
+    --panel: rgba(255, 255, 255, 0.05);
+    --blanco: #fff;
+    --gris: #ccc;
+    --rosa: #ff4d6d;
+    --morado: #7c3aed;
+    --fondo:#0f172a
+    --borde: rgba(255, 255, 255, 0.1);
+   
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--fondo);
+    color: var(--blanco);
+   
+}
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    background-filter: blur(10px);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 100vh;
+    width: 90%:
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 120px 0 80px;
+    flex-wrap: wrap;
+}
+
+.hero text {
+    flex: 1 1 500px
+}
+
+.hero-text h1 {
+    font-size: 58px;
+    line-height: 1.05;
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+.hero-text p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #d1d5db;
+    max-width: 550px;
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 100%
+    max-width: 420px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    display: block;
+}
+
+
+
+
+.btn {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 14px;
+   
+}
+
+.btn-principal {
+    background: linear-gradient(135deg, var(--rosa), var(--morado));
+    color: white;
+  
+
+}
+
+
+.btn-secundario {
+   
+    border: 1px solid white;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+section {
+    padding: 90px 20px;
+}
+
+.section {
+    width: 90%
+    max-width: 1100px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.section h3 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #d1d5db;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+ 
+
+   
+@media (max-width: 768px) {
+    .galeria-grid {
+        grid-template-colunms: 1fr;
+    }
+
+    }
+
+    
+   
+
